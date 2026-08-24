@@ -1,0 +1,60 @@
+[generation]
+tool = "OpenAI image_gen.imagegen"
+date = "2026-08-23"
+style_reference = "assets/units/vanguard-ranger.png"
+style_reference_sha256 = "566864e3f972b9cf59dd19a8a12d8217b27d7e56d152ec80b9a53af41843b579"
+notes = "Project-bound runtime assets. Generated sources were inspected, transparency-corrected when necessary, trimmed, resized, and centered with ImageMagick 6. No generation occurs during configure, build, or runtime."
+
+[[asset]]
+path = "assets/units/vanguard-ranger.png"
+sha256 = "566864e3f972b9cf59dd19a8a12d8217b27d7e56d152ec80b9a53af41843b579"
+prompt = "Premium hand-painted dark-fantasy Vanguard Ranger; blue-black leather and tarnished silver; readable three-quarter top-down board sprite; cool moonlight; one centered subject; genuine transparent background; no base, text, logo, signature, or watermark."
+reference = "First accepted style anchor."
+
+[[asset]]
+path = "assets/units/vanguard-warden.png"
+sha256 = "79d8455b8c77abec50f0c74fff89cfc9dba1acfad3f8aa9ac3f4a7bb5f84cdff"
+prompt = "Armored Vanguard Warden with tower shield; ivory and blue-black accents; same readable dark-fantasy board-game silhouette and three-quarter top-down perspective as the Ranger; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger style anchor; image_gen transparency extraction pass."
+
+[[asset]]
+path = "assets/units/vanguard-arcanist.png"
+sha256 = "4d01531c36ba77f2f25d2a5c1b6e214f6056e9f5576128c5cc42a2ec32f2a905"
+prompt = "Vanguard Arcanist with a restrained violet arcane focus; ivory, blue-black, and tarnished silver costume; same readable top-down tabletop perspective as the Ranger; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger style anchor; image_gen transparency extraction pass."
+
+[[asset]]
+path = "assets/units/raider-guardian.png"
+sha256 = "4281bce47a12ea066c9482223a261471465a48fca0fa975a7c34d7fee81ac684"
+prompt = "Massive Raider Thorn Guardian in blackened iron and briar growths; menacing but readable board-game silhouette; same moonlit three-quarter top-down perspective; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger style anchor; two image_gen transparency extraction passes."
+
+[[asset]]
+path = "assets/units/raider-stalker.png"
+sha256 = "69cb6beb94c388f35627ceed3d4a4cfac9844924756ba6f885261e4b94a7a42a"
+prompt = "Lean Raider Stalker with hooked blades and ragged black-green cloak; readable dark-fantasy board-game silhouette; same three-quarter top-down perspective; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger style anchor; image_gen transparency extraction pass."
+
+[[asset]]
+path = "assets/units/raider-hexer.png"
+sha256 = "2d5a84923ac320c7c2028d144154589dc1ca0bc42939b32c00973fe1a19a66da"
+prompt = "Raider Hexer with poisonous green-violet magic and blackened ritual armor; readable dark-fantasy tabletop silhouette; same three-quarter top-down perspective; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger style anchor; image_gen transparency extraction pass."
+
+[[asset]]
+path = "assets/terrain/shrine-crystal.png"
+sha256 = "ec30a40f94be84687af7ca72846c98a3c77f86bfd48410820015f4570ae931a4"
+prompt = "Fractured violet arcane shrine crystal in black stone ruins; compact objective prop; premium hand-painted dark-fantasy board-game art; three-quarter top-down perspective; genuine transparent background; no text or marks."
+reference = "Vanguard Ranger palette and perspective reference."
+
+[[asset]]
+path = "assets/cards/focus.png"
+sha256 = "e79909d57f03713ec0d9499d162af9fe8a3aa4a8c34277d936e14312614ef8cc"
+prompt = "Magical Focus card token in worn blue-black parchment and tarnished silver with an abstract ivory eye-and-arrow sigil and restrained violet glow; three-quarter top-down perspective; genuine transparent background; no readable text, logo, signature, or watermark."
+reference = "Vanguard Ranger and shrine visual language."
+
+[[asset]]
+path = "assets/terrain/ruin-wall.png"
+sha256 = "b5feeb2a266438d47266c05397c3cb8d062ca2837ba06163d80287d8a0330f36"
+prompt = "One isolated low broken ancient stone ruin wall with a cracked pillar, black basalt and charcoal masonry, restrained violet magical veins, readable slightly elevated three-quarter tabletop perspective, transparent background, clean alpha, no floor, people, text, logo, watermark, border, or edge halo."
+reference = "assets/terrain/shrine-crystal.png; image_gen generated design and cleanup passes were inspected and rejected for opaque checkerboard mattes; the accepted design received deterministic ImageMagick 6 dual-matte removal, trim, resize, centering, and one-pixel alpha erosion before dark/cyan-background inspection."

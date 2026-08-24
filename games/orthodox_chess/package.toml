@@ -1,0 +1,31 @@
+[package]
+id = "org.ludus-arcanum.orthodox-chess"
+version = "1.0.0"
+engine_api = ">=0.1.0,<0.2.0"
+entry_point = "orthodox_chess.rules"
+save_compatibility = 1
+visuals = "visuals/theme.toml"
+assets = [
+  "assets/pieces/ivory/pawn.png",
+  "assets/pieces/ivory/knight.png",
+  "assets/pieces/ivory/bishop.png",
+  "assets/pieces/ivory/rook.png",
+  "assets/pieces/ivory/queen.png",
+  "assets/pieces/ivory/king.png",
+  "assets/pieces/iron/pawn.png",
+  "assets/pieces/iron/knight.png",
+  "assets/pieces/iron/bishop.png",
+  "assets/pieces/iron/rook.png",
+  "assets/pieces/iron/queen.png",
+  "assets/pieces/iron/king.png",
+  "assets/ui/ivory-crest.png",
+  "assets/ui/iron-crest.png",
+  "assets/ui/frame-corner.png",
+  "assets/ui/board-material.png",
+]
+permissions = []
+dependencies = []
+
+[native]
+extensions = []
+enabled_by_default = false

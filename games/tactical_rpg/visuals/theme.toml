@@ -1,0 +1,92 @@
+[theme]
+id = "dark-fantasy"
+display_name = "The Shattered Shrine"
+font_families = ["Cinzel", "Cormorant Garamond", "Serif"]
+background = "#090b12ff"
+
+[[sprite]]
+id = "unit.ranger"
+source = "assets/units/vanguard-ranger.png"
+pivot_x = 0.5
+pivot_y = 0.86
+world_width = 1.15
+world_height = 1.55
+filter = "linear"
+
+[[sprite]]
+id = "unit.warden"
+source = "assets/units/vanguard-warden.png"
+pivot_x = 0.5
+pivot_y = 0.86
+world_width = 1.2
+world_height = 1.6
+filter = "linear"
+
+[[sprite]]
+id = "unit.arcanist"
+source = "assets/units/vanguard-arcanist.png"
+pivot_x = 0.5
+pivot_y = 0.86
+world_width = 1.15
+world_height = 1.55
+filter = "linear"
+
+[[sprite]]
+id = "unit.thorn_guardian"
+source = "assets/units/raider-guardian.png"
+pivot_x = 0.5
+pivot_y = 0.87
+world_width = 1.28
+world_height = 1.68
+filter = "linear"
+
+[[sprite]]
+id = "unit.stalker"
+source = "assets/units/raider-stalker.png"
+pivot_x = 0.5
+pivot_y = 0.86
+world_width = 1.12
+world_height = 1.52
+filter = "linear"
+
+[[sprite]]
+id = "unit.hexer"
+source = "assets/units/raider-hexer.png"
+pivot_x = 0.5
+pivot_y = 0.86
+world_width = 1.15
+world_height = 1.55
+filter = "linear"
+
+[[sprite]]
+id = "terrain.shrine"
+source = "assets/terrain/shrine-crystal.png"
+pivot_x = 0.5
+pivot_y = 0.74
+world_width = 1.2
+world_height = 1.2
+filter = "linear"
+
+[[sprite]]
+id = "card.focus"
+source = "assets/cards/focus.png"
+pivot_x = 0.5
+pivot_y = 0.5
+world_width = 0.55
+world_height = 0.75
+filter = "linear"
+
+[[sprite]]
+id = "terrain.ruin"
+source = "assets/terrain/ruin-wall.png"
+pivot_x = 0.5
+pivot_y = 0.82
+world_width = 1.62
+world_height = 1.42
+filter = "linear"
+
+[[animation]]
+id = "effect.focus"
+frames = ["card.focus"]
+frame_ms = 160
+loop = true

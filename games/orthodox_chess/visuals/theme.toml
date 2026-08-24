@@ -1,0 +1,177 @@
+[theme]
+id = "reliquary"
+display_name = "The Ivory Reliquary"
+font_families = ["Cinzel", "Cormorant Garamond", "Serif"]
+background = "#090b11ff"
+
+[[color]]
+id = "board.light"
+value = "#7b6445ff"
+
+[[color]]
+id = "board.dark"
+value = "#1b212bff"
+
+[[color]]
+id = "board.frame"
+value = "#a77c33ff"
+
+[[color]]
+id = "interaction.selection"
+value = "#f0bd4eff"
+
+[[color]]
+id = "interaction.capture"
+value = "#df4b43ff"
+
+[[color]]
+id = "interaction.check"
+value = "#e51f2dff"
+
+[[color]]
+id = "interaction.focus"
+value = "#8edaffff"
+
+[[sprite]]
+id = "piece.ivory.pawn"
+source = "assets/pieces/ivory/pawn.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.82
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.ivory.knight"
+source = "assets/pieces/ivory/knight.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.86
+world_height = 1.12
+filter = "linear"
+
+[[sprite]]
+id = "piece.ivory.bishop"
+source = "assets/pieces/ivory/bishop.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.82
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.ivory.rook"
+source = "assets/pieces/ivory/rook.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.84
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.ivory.queen"
+source = "assets/pieces/ivory/queen.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.86
+world_height = 1.13
+filter = "linear"
+
+[[sprite]]
+id = "piece.ivory.king"
+source = "assets/pieces/ivory/king.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.87
+world_height = 1.14
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.pawn"
+source = "assets/pieces/iron/pawn.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.82
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.knight"
+source = "assets/pieces/iron/knight.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.86
+world_height = 1.12
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.bishop"
+source = "assets/pieces/iron/bishop.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.82
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.rook"
+source = "assets/pieces/iron/rook.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.84
+world_height = 1.08
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.queen"
+source = "assets/pieces/iron/queen.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.86
+world_height = 1.13
+filter = "linear"
+
+[[sprite]]
+id = "piece.iron.king"
+source = "assets/pieces/iron/king.png"
+pivot_x = 0.5
+pivot_y = 0.84
+world_width = 0.87
+world_height = 1.14
+filter = "linear"
+
+[[sprite]]
+id = "participant.ivory.crest"
+source = "assets/ui/ivory-crest.png"
+pivot_x = 0.5
+pivot_y = 0.5
+world_width = 1.0
+world_height = 1.0
+filter = "linear"
+
+[[sprite]]
+id = "participant.iron.crest"
+source = "assets/ui/iron-crest.png"
+pivot_x = 0.5
+pivot_y = 0.5
+world_width = 1.0
+world_height = 1.0
+filter = "linear"
+
+[[sprite]]
+id = "decoration.frame.corner"
+source = "assets/ui/frame-corner.png"
+pivot_x = 0.5
+pivot_y = 0.5
+world_width = 1.18
+world_height = 1.18
+filter = "linear"
+
+[[sprite]]
+id = "board.material.dark"
+source = "assets/ui/board-material.png"
+pivot_x = 0.5
+pivot_y = 0.5
+world_width = 1.0
+world_height = 1.0
+filter = "linear"

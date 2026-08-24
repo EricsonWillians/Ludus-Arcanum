@@ -1,0 +1,24 @@
+[package]
+id = "org.ludus-arcanum.tactical-rpg"
+version = "1.0.0"
+engine_api = ">=0.1.0,<0.2.0"
+entry_point = "tactical_rpg.rules"
+save_compatibility = 1
+visuals = "visuals/theme.toml"
+assets = [
+  "assets/units/vanguard-ranger.png",
+  "assets/units/vanguard-warden.png",
+  "assets/units/vanguard-arcanist.png",
+  "assets/units/raider-guardian.png",
+  "assets/units/raider-stalker.png",
+  "assets/units/raider-hexer.png",
+  "assets/terrain/shrine-crystal.png",
+  "assets/terrain/ruin-wall.png",
+  "assets/cards/focus.png",
+]
+permissions = []
+dependencies = []
+
+[native]
+extensions = []
+enabled_by_default = false

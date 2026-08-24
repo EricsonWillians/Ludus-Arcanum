@@ -1,0 +1,106 @@
+[generation]
+tool = "OpenAI image_gen.imagegen"
+date = "2026-08-23"
+style_reference = "assets/pieces/ivory/pawn.png"
+style_reference_sha256 = "358379d72c8066dbd908de3ef658436b271a1b87d0b2a6e6b0cda01e9d54e0ea"
+notes = "Project-bound runtime assets. Every generated subject and the final 12-piece montage were visually inspected. Outputs were trimmed, normalized to a 384x512 transparent canvas, and optimized with ImageMagick 6. Iron pieces are deterministic material-grade variants of the accepted subjects. Queen and king generators repeatedly returned a rendered neutral checker rather than alpha; after rejecting three image-generation correction attempts, a conservative neutral-background alpha recovery was applied and inspected. No generation occurs during configure, build, or runtime."
+
+[[asset]]
+path = "assets/pieces/ivory/pawn.png"
+sha256 = "358379d72c8066dbd908de3ef658436b271a1b87d0b2a6e6b0cda01e9d54e0ea"
+prompt = "Premium hand-painted dark-fantasy ivory chess pawn reliquary, bone and aged ivory with blackened-iron filigree, elegant readable silhouette, three-quarter slightly top-down board-game perspective, cool moonlight and restrained violet-blue rim light, one centered subject, genuine transparent background, no base scene, text, logo, signature, or watermark."
+reference = "First accepted style anchor."
+
+[[asset]]
+path = "assets/pieces/ivory/knight.png"
+sha256 = "a1754a2b5fd78f65c4d252925afebab02753b8713a5fe2997986c77394849971"
+prompt = "Matching ivory dark-fantasy chess knight reliquary, sculpted warhorse head, bone and aged ivory with blackened-iron filigree; same silhouette, perspective, moonlight, scale, and transparent-background rules as the accepted pawn."
+reference = "Ivory pawn style reference."
+
+[[asset]]
+path = "assets/pieces/ivory/bishop.png"
+sha256 = "3918b65c48b39a6d02feba877ff1f5d15d0dac7dfb66dde60faa0cc0e4fd005c"
+prompt = "Matching ivory dark-fantasy chess bishop reliquary, elegant split mitre, bone and aged ivory with blackened-iron filigree; same silhouette, perspective, moonlight, scale, and transparent-background rules as the accepted pawn."
+reference = "Ivory pawn style reference."
+
+[[asset]]
+path = "assets/pieces/ivory/rook.png"
+sha256 = "33c79068240fb8d9fd83046c4ee91c15132cb2efbb1e3fac666f2ff8c66bdadc"
+prompt = "Matching ivory dark-fantasy chess rook reliquary, compact crenellated tower, bone and aged ivory with blackened-iron filigree; same silhouette, perspective, moonlight, scale, and transparent-background rules as the accepted pawn."
+reference = "Ivory pawn style reference."
+
+[[asset]]
+path = "assets/pieces/ivory/queen.png"
+sha256 = "71b6a26f75815ee5003acc3279194985c189278f4fa1a904b1f37e7f83445c3d"
+prompt = "Matching ivory dark-fantasy chess queen reliquary, regal narrow crown and readable silhouette, bone and aged ivory with blackened-iron filigree; same perspective, moonlight, scale, and transparent-background rules as the accepted pawn."
+reference = "Ivory pawn style reference; neutral-checker alpha recovery after rejected generator correction attempts."
+
+[[asset]]
+path = "assets/pieces/ivory/king.png"
+sha256 = "75114bf4a8b709ceec60ae07a9713e2b44cb79744c80b014775386c33cf5e65b"
+prompt = "Matching ivory dark-fantasy chess king reliquary, imposing crown and restrained cross-like finial, bone and aged ivory with blackened-iron filigree; same perspective, moonlight, scale, and transparent-background rules as the accepted pawn."
+reference = "Ivory pawn style reference; neutral-checker alpha recovery after rejected generator correction attempts."
+
+[[asset]]
+path = "assets/pieces/iron/pawn.png"
+sha256 = "8b0de562f3b98543f11288f1a154cabadd7e8643f51b9a9669fd1799eb881fa8"
+prompt = "Deterministic blackened-iron material grade of the accepted pawn subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/pawn.png"
+
+[[asset]]
+path = "assets/pieces/iron/knight.png"
+sha256 = "2f687279cf7285b5d4d7e73d87041479f71b00333e5f041cd0eb6df5849f0563"
+prompt = "Deterministic blackened-iron material grade of the accepted knight subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/knight.png"
+
+[[asset]]
+path = "assets/pieces/iron/bishop.png"
+sha256 = "0c6ec21c405e55f357006df01f609db5e02ef5f8ba55cefb726588d88180f501"
+prompt = "Deterministic blackened-iron material grade of the accepted bishop subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/bishop.png"
+
+[[asset]]
+path = "assets/pieces/iron/rook.png"
+sha256 = "84b85eb265d12b6489394a9cae5301ac0087e8cd682cd6105ce0f4b746b06dc4"
+prompt = "Deterministic blackened-iron material grade of the accepted rook subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/rook.png"
+
+[[asset]]
+path = "assets/pieces/iron/queen.png"
+sha256 = "794e3e22f964b81e4bf9c2221ab0ce687a26e3ddcddc226237b5c9b79f98837a"
+prompt = "Deterministic blackened-iron material grade of the accepted queen subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/queen.png"
+
+[[asset]]
+path = "assets/pieces/iron/king.png"
+sha256 = "79e8f82d6aa6afa3e295a97cb5fbf9f6987528e820d6352d6a84ced2ac56c985"
+prompt = "Deterministic blackened-iron material grade of the accepted king subject, preserving silhouette, alpha, and perspective; cold blue highlights and restrained antique-bronze undertone."
+reference = "assets/pieces/ivory/king.png"
+
+[[asset]]
+path = "assets/ui/ivory-crest.png"
+sha256 = "9bbf0a0a38ededd88fdb852ae899e067406431deb2f77782d10a49f51434fcaa"
+prompt = "One isolated heraldic Ivory player crest: compact symmetrical shield reliquary, abstract pawn-crown silhouette, aged ivory, bone, blackened-iron filigree, restrained violet-blue accents, front-facing UI emblem, genuine transparent background, no text or marks."
+reference = "assets/pieces/ivory/pawn.png; first accepted Milestone 8 UI style output."
+processing = "ImageMagick 6 trim, 220px fit on a 256px transparent canvas, metadata strip; inspected on near-black and warm-light proofs."
+
+[[asset]]
+path = "assets/ui/iron-crest.png"
+sha256 = "a84ff69a11b13bedef82e561abfb020a12950391586bf45dc74fbea734de9d70"
+prompt = "Matching Blackened Iron player crest: compact symmetrical shield reliquary with abstract rook-crown silhouette, midnight steel, cool silver-blue highlights, sparse ivory inlay, restrained violet accents, transparent background, no text or marks."
+reference = "assets/ui/ivory-crest.png and assets/pieces/ivory/pawn.png."
+processing = "Three opaque-checker attempts were rejected. The accepted design received connected 15%-fuzz neutral-matte removal, trim, 220px fit on a 256px transparent canvas, metadata strip, and dark/light proof inspection."
+
+[[asset]]
+path = "assets/ui/frame-corner.png"
+sha256 = "c2122f18eee17b1df14bd6b2a3344c4abb3249af4345533e3091a34ee06f8928"
+prompt = "One restrained L-shaped inner chessboard frame corner fitting in blackened iron, worn gold bevel, ivory thorn-leaf inlay, and a tiny violet gem; transparent background; no board, text, or marks."
+reference = "assets/ui/ivory-crest.png."
+processing = "Opaque checker output received connected 15%-fuzz neutral-matte removal, trim, 440px fit on a 512px transparent canvas, metadata strip, and dark/light proof inspection."
+
+[[asset]]
+path = "assets/ui/board-material.png"
+sha256 = "7542004153da133715728b57f993a9f4a9d96cbb0c691c2ea8bdf47c168bcc2e"
+prompt = "Seamless restrained dark-fantasy chessboard material tile: nearly flat top-down blue-black ebonized wood or slate, subtle grain and wear, low contrast, even lighting, no grid, border, objects, text, or marks."
+reference = "assets/ui/ivory-crest.png."
+processing = "ImageMagick 6 exact 512px resize and metadata strip; inspected for low contrast and absence of semantic marks."

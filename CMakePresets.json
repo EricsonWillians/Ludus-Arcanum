@@ -1,0 +1,132 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 28,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_CXX_EXTENSIONS": "OFF",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "dev",
+      "displayName": "Development",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "LUDUS_BUILD_TESTS": "ON",
+        "LUDUS_WARNINGS_AS_ERRORS": "ON"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "LUDUS_BUILD_TESTS": "ON",
+        "LUDUS_WARNINGS_AS_ERRORS": "ON"
+      }
+    },
+    {
+      "name": "gui",
+      "displayName": "Development with required GUI dependencies",
+      "inherits": "dev",
+      "cacheVariables": {
+        "LUDUS_BUILD_GUI": "ON",
+        "LUDUS_REQUIRE_GUI": "ON"
+      }
+    },
+    {
+      "name": "gui-release",
+      "displayName": "Release with required GUI dependencies",
+      "inherits": "release",
+      "cacheVariables": {
+        "LUDUS_BUILD_GUI": "ON",
+        "LUDUS_REQUIRE_GUI": "ON"
+      }
+    },
+    {
+      "name": "sanitizers",
+      "displayName": "ASan and UBSan",
+      "inherits": "dev",
+      "cacheVariables": {
+        "LUDUS_ENABLE_SANITIZERS": "ON"
+      }
+    },
+    {
+      "name": "benchmarks",
+      "displayName": "Release benchmarks",
+      "inherits": "release",
+      "cacheVariables": {
+        "LUDUS_BUILD_TESTS": "OFF",
+        "LUDUS_BUILD_BENCHMARKS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "dev",
+      "configurePreset": "dev"
+    },
+    {
+      "name": "release",
+      "configurePreset": "release"
+    },
+    {
+      "name": "gui",
+      "configurePreset": "gui"
+    },
+    {
+      "name": "gui-release",
+      "configurePreset": "gui-release"
+    },
+    {
+      "name": "sanitizers",
+      "configurePreset": "sanitizers"
+    },
+    {
+      "name": "benchmarks",
+      "configurePreset": "benchmarks"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "dev",
+      "configurePreset": "dev",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "release",
+      "configurePreset": "release",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "gui",
+      "configurePreset": "gui",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "gui-release",
+      "configurePreset": "gui-release",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "sanitizers",
+      "configurePreset": "sanitizers",
+      "output": { "outputOnFailure": true },
+      "environment": {
+        "ASAN_OPTIONS": "detect_leaks=0:strict_string_checks=1",
+        "UBSAN_OPTIONS": "print_stacktrace=1"
+      }
+    }
+  ]
+}

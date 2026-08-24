@@ -67,3 +67,10 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Ludus Arcanum runtime artifacts
+*.ludus-save
+*.ludus-replay
