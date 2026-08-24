@@ -1,0 +1,13 @@
+schema_version = 1
+
+[[asset]]
+path = "docs/assets/ludus-arcanum-logo.png"
+purpose = "Project emblem displayed in README.md"
+tool = "OpenAI built-in image generation"
+date = "2026-08-24"
+use_case = "logo-brand"
+prompt = "Create a clean, symmetrical heraldic Ludus Arcanum emblem combining a chess rook, a faceted polyhedral die, restrained orbital geometry, and a board-grid foundation. Use a vector-friendly dark-fantasy treatment with blackened iron, bone ivory, and antique gold; no text, watermark, background, or trademarked symbols."
+refinement = "Simplified internal geometry, removed checkerboard preview pixels through background extraction, and retained genuine transparent alpha. The selected result was inspected at README scale against both GitHub light and dark backgrounds."
+processing = "Resized from 1230x1278 to 744x768 with ImageMagick, stripped ancillary metadata, and encoded as an optimized 8-bit sRGBA PNG."
+source_sha256 = "43b5f04f27356a022e095c1f58005caf1b91c6a3aae8fe39a496784a5ca52359"
+sha256 = "1ccf12db52bdf995fbd7ae25688da881994749f59f4bb1842b1a54c6cc692185"
