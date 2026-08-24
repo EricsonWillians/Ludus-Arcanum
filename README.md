@@ -82,6 +82,10 @@ with `./build/gui-release/ludus-player --stress-sprites 10000 --renderer auto`.
 
 ## Studio workflow
 
+For a complete walkthrough of editable packages, manifests, boards, Python movement and
+action APIs, visual themes, deterministic testing, and the native C++ adapter path, see
+the [package authoring and C++/Python integration tutorial](docs/package-authoring.md).
+
 Start `ludus-studio`, enter an unused package directory such as
 `/tmp/my-variation.ludus`, and choose **New**. The Studio writes a complete package,
 including:
